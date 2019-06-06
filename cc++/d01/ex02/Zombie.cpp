@@ -1,13 +1,16 @@
 #include "Zombie.hpp"
 #include <iostream>
 
+std::string Zombie::type = "";
 
 Zombie::Zombie(void){
     
 }
 
-void Zombie::announce(std::string nameofZombie, std::string typeofZombie){
 
-   // std::cout "<" << nameofZombie << "(" << typeofZombie << ")" << ">" << "AHHHHH";
+
+void Zombie::announce(Zombie inputZombie){
+
+   std::cout << "<" << inputZombie.name << "(" << inputZombie.type << ")" << ">" << "AHHHHH\n";
 
 }
